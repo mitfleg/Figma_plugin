@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="main" class="">
+      <div id="login" class="login">
+        <div class="wrapper">
+          <p class="title">Welcome</p>
+          <p class="subtitle">
+            Enter your email to receive the confirmation code:
+          </p>
+          <input
+            placeholder="email@example.com"
+            class="login-input"
+            type="email"
+          />
+        </div>
+        <div class="wrapper">
+          <p class="terms">
+            By continuing, you agree to our
+            <a
+              href="https://svgconverter.ru/policy/"
+              class=""
+              target="_blank"
+              rel="noreferrer"
+              >terms of use</a
+            >
+          </p>
+          <div class="button" data-send="signup">Receive code</div>
+        </div>
+      </div>
+      <div id="confirmEmail" class="confirm" hidden>
+        <div class="wrapper">
+          <p class="title">Welcome</p>
+          <p class="subtitle">
+            Enter the 6-digit code sent to email:
+            <span class="confirmRepeatEmail"></span>
+            <span class="subtitle subtitle-mini pt10 d-flex"
+              >If you don't find it, check your spam folder.</span
+            >
+          </p>
+          <div class="code-input">
+            <input
+              id=""
+              data-id="0"
+              type="text"
+              min="0"
+              max="9"
+              maxlength="1"
+              autocomplete="off"
+              inputmode="numeric"
+            />
+            <input
+              id=""
+              data-id="1"
+              type="text"
+              min="0"
+              max="9"
+              maxlength="1"
+              autocomplete="off"
+              inputmode="numeric"
+            />
+            <input
+              id=""
+              data-id="2"
+              type="text"
+              min="0"
+              max="9"
+              maxlength="1"
+              autocomplete="off"
+              inputmode="numeric"
+            />
+            <input
+              id=""
+              data-id="3"
+              type="text"
+              min="0"
+              max="9"
+              maxlength="1"
+              autocomplete="off"
+              inputmode="numeric"
+            />
+            <input
+              id=""
+              data-id="4"
+              type="text"
+              min="0"
+              max="9"
+              maxlength="1"
+              autocomplete="off"
+              inputmode="numeric"
+            />
+            <input
+              id=""
+              data-id="5"
+              type="text"
+              min="0"
+              max="9"
+              maxlength="1"
+              autocomplete="off"
+              inputmode="numeric"
+            />
+          </div>
+          <span class="subtitle subtitle-mini" id="confirmTimer"
+            >New code available in 59 seconds</span
+          >
+        </div>
+        <div class="wrapper">
+          <div class="button" data-send="confirm">Confirm code</div>
+        </div>
+      </div>
+      <div id="work" class="work" hidden>
+        <div class="header">
+          <div class="header-user">
+            <div class="header-user-img"></div>
+            <div class="header-user-login"></div>
+          </div>
+          <div class="header-button" hidden>Subscribe</div>
+          <div class="header-subscribtion" hidden></div>
+        </div>
+        <div class="body non-premium">
+          <div class="body-list">
+            <div class="body-list-item" id="HTML">
+              <div class="item-wrapper">
+                <div class="item-img html"></div>
+                <div class="item-list-wrapper">
+                  <div class="item-title">HTML</div>
+                  <div class="item-descr">Convert to HTML Code</div>
+                </div>
+              </div>
+              <div class="item-arrow"></div>
+            </div>
+            <div class="body-list-item" id="CSS">
+              <div class="item-wrapper">
+                <div class="item-img css"></div>
+                <div class="item-list-wrapper">
+                  <div class="item-title">CSS</div>
+                  <div class="item-descr">Convert to CSS Code</div>
+                </div>
+              </div>
+              <div class="item-arrow"></div>
+            </div>
+            <div class="body-list-item" id="IMG">
+              <div class="item-wrapper">
+                <div class="item-img img"></div>
+                <div class="item-list-wrapper">
+                  <div class="item-title">IMG</div>
+                  <div class="item-descr">Convert to IMG Code</div>
+                </div>
+              </div>
+              <div class="item-arrow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="settings" hidden>
+          <div class="settings-wrapper">
+            <div class="settings-back">
+              <div class="settings-back-arrow"></div>
+              <div class="settings-back-text">Back</div>
+            </div>
+            <div class="settings-logout" data-send="exit">Log out</div>
+          </div>
+          <div class="setting-scroll">
+            <div class="settings-wrapper">
+              <div class="settings-promocode">
+                <input
+                  type="text"
+                  class="settings-promocode-input"
+                  placeholder="Code"
+                />
+                <div class="settings-promocode-button" data-send="promocode">
+                  Activate
+                </div>
+              </div>
+            </div>
+            <div class="settings-wrapper">
+              <div class="settings-list">
+                <div class="settings-item">
+                  <div class="settings-title">1 Day Subscription</div>
+                  <div class="settings-descr">
+                    <div class="settings-descr-item">
+                      <div class="settings-descr-img"></div>
+                      <div class="settings-descr-text">
+                        Convert to HTML code
+                      </div>
+                    </div>
+                    <div class="settings-descr-item">
+                      <div class="settings-descr-img"></div>
+                      <div class="settings-descr-text">Convert to CSS code</div>
+                    </div>
+                    <div class="settings-descr-item">
+                      <div class="settings-descr-img"></div>
+                      <div class="settings-descr-text">Convert to IMG code</div>
+                    </div>
+                  </div>
+                  <div class="settings-price">
+                    <div class="settings-price-old">$0.2</div>
+                    <div class="settings-price-new">$0.12</div>
+                  </div>
+                  <div class="settings-buy">Buy</div>
+                </div>
+                <div class="settings-item">
+                  <div class="settings-title">1 Day Subscription</div>
+                  <div class="settings-descr">
+                    <div class="settings-descr-item">
+                      <div class="settings-descr-img"></div>
+                      <div class="settings-descr-text">
+                        Convert to HTML code
+                      </div>
+                    </div>
+                    <div class="settings-descr-item">
+                      <div class="settings-descr-img"></div>
+                      <div class="settings-descr-text">Convert to CSS code</div>
+                    </div>
+                    <div class="settings-descr-item">
+                      <div class="settings-descr-img"></div>
+                      <div class="settings-descr-text">Convert to IMG code</div>
+                    </div>
+                  </div>
+                  <div class="settings-price">
+                    <div class="settings-price-old">$0.2</div>
+                    <div class="settings-price-new">$0.12</div>
+                  </div>
+                  <div class="settings-buy">Buy</div>
+                </div>
+                <div class="settings-item">
+                  <div class="settings-title">1 Day Subscription</div>
+                  <div class="settings-descr">
+                    <div class="settings-descr-item">
+                      <div class="settings-descr-img"></div>
+                      <div class="settings-descr-text">
+                        Convert to HTML code
+                      </div>
+                    </div>
+                    <div class="settings-descr-item">
+                      <div class="settings-descr-img"></div>
+                      <div class="settings-descr-text">Convert to CSS code</div>
+                    </div>
+                    <div class="settings-descr-item">
+                      <div class="settings-descr-img"></div>
+                      <div class="settings-descr-text">Convert to IMG code</div>
+                    </div>
+                  </div>
+                  <div class="settings-price">
+                    <div class="settings-price-old">$0.2</div>
+                    <div class="settings-price-new">$0.12</div>
+                  </div>
+                  <div class="settings-buy">Buy</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="success" hidden>Copied</div>
+    <div id="preloader" hidden>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="50px"
+        height="50px"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid"
+      >
+        <path
+          d="M4 50A46 46 0 0 0 96 50A46 48 0 0 1 4 50"
+          fill="#FFFFFF"
+          stroke="none"
+        >
+          <animateTransform
+            attributeName="transform"
+            type="rotate"
+            dur="1s"
+            repeatCount="indefinite"
+            keyTimes="0;1"
+            values="0 50 51;360 50 51"
+          ></animateTransform>
+        </path>
+      </svg>
+      Loading...
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var css = document.createElement("link");
+      css.href =
+        "https://svgconverter.ru/api/svgconverter.css?v=" +
+        new Date().getTime();
+      css.rel = "stylesheet";
+      document.head.appendChild(css);
+
+      var js = document.createElement("script");
+      js.src =
+        "https://svgconverter.ru/api/svgconverter.js?v=" + new Date().getTime();
+      document.body.appendChild(js);
+    </script>
+  </body>
+</html>

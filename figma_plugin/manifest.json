@@ -1,0 +1,12 @@
+{
+	"name": "SVG Converter",
+	"id": "1041976583581285249",
+	"api": "1.0.0",
+	"main": "code.js",
+	"ui": "ui.html",
+	"permissions": ["currentuser"],
+	"editorType": [
+		"figma",
+		"figjam"
+	]
+}
